@@ -37,9 +37,9 @@ This repository contains Python-based solutions to a programming assignment that
 - **Base Class**: `Vehicle`
 - **Derived Classes**: `Car`, `Plane`, `Bicycle`
 - **Unique Actions**:
-  - `Car.move()`: Driving 🚗
-  - `Plane.move()`: Flying ✈️
-  - `Bicycle.move()`: Pedaling 🚴
+  - `Car.move()`: Driving
+  - `Plane.move()`: Flying
+  - `Bicycle.move()`: Pedaling
 
 ---
 
