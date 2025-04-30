@@ -2,12 +2,67 @@
 # OOP_ASSIGNMENT_PLP
 ## Assignment 1: Design Your Own Class! 🏗️
 
-Create a class representing anything you like (a Smartphone, Book, or even a Superhero!).
+## Overview
+This repository contains Python-based solutions to a programming assignment that explores object-oriented programming concepts such as classes, inheritance, and polymorphism.
 
-Add attributes and methods to bring the class to life!
-Use constructors to initialize each object with unique values.
-Add an inheritance layer to explore polymorphism or encapsulation.
+### Key Activities:
+1. **Design Your Own Class**:
+    - Create a class of your choice (`Device`), representing real-world objects.
+    - Add attributes and methods to define functionality.
+    - Implement inheritance with a derived class (`Smartphone`) for specific features.
+    - Explore encapsulation and polymorphism through method overrides.
 
-## Activity 2: Polymorphism Challenge! 🎭
+2. **Polymorphism Challenge**:
+    - Create classes for different objects (e.g., `Car`, `Plane`, `Bicycle`) inheriting from a base class (`Vehicle`).
+    - Each class defines a common method (`move`) with its unique behavior.
 
-Create a program that includes animals or vehicles with the same action (like move()). However, make each class define move() differently (for example, Car.move() prints "Driving" 🚗, while Plane.move() prints "Flying" ✈️).
+---
+
+## Project Structure
+### Files:
+- `class_definition.py`: Contains class implementations and methods for Assignment 1.
+
+---
+
+### Example Classes:
+#### `Device` (Base Class):
+- Attributes: `brand`, `model`
+- Methods: `power_on`, `power_off`
+
+#### `Smartphone` (Derived Class):
+- Attributes: `brand`, `model`, `battery_level`
+- Methods: `check_battery`, `charge_phone`, `make_call`
+
+#### Polymorphism:
+- **Base Class**: `Vehicle`
+- **Derived Classes**: `Car`, `Plane`, `Bicycle`
+- **Unique Actions**:
+  - `Car.move()`: Driving 🚗
+  - `Plane.move()`: Flying ✈️
+  - `Bicycle.move()`: Pedaling 🚴
+
+---
+
+## Example Usage
+### Activity 1: Class and Inheritance
+
+```python
+my_phone = Smartphone("Apple", "iPhone 16 Pro Max", 85)
+my_phone.power_on()
+my_phone.check_battery()
+my_phone.make_call("+254713442011")
+my_phone.charge_phone()
+my_phone.check_battery()
+
+
+vehicle1 = Car()
+vehicle2 = Plane()
+vehicle3 = Bicycle()
+
+vehicle1.move()  # Output: Driving
+vehicle2.move()  # Output: Flying
+vehicle3.move()  # Output: Pedaling
+
+
+
+
